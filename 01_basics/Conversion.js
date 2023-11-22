@@ -37,7 +37,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3); 2 raise to the power 3
 // console.log(2/3);
 // console.log(2%3);
 
@@ -54,8 +54,8 @@ let str3 = str1 + str2
 
 // console.log( (3 + 4) * 5 % 3);
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true); returns 1
+// console.log(+"");    returns 0
 
 let num1, num2, num3
 

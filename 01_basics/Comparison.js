@@ -18,6 +18,7 @@ console.log(undefined > 0);
 console.log(undefined < 0);
 */
 // === 
+// Conceptually, undefined indicates the absence of a value, while null indicates the absence of an object
 
 console.log("2" === 2);
 console.log("2" == 2);

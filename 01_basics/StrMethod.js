@@ -34,10 +34,10 @@ const str1 = new String(true)
 console.log(str1);
 const str2 = new String(Symbol("123")) // Throws typeerror
 
-const str = 'The quick brown fox jumps over the lazy dog.';
+const str3 = 'The quick brown fox jumps over the lazy dog.';
 
-console.log(str.slice(4, 19));
+console.log(str3.slice(4, 19));
 // Expected output: "quick brown fox"
 
-console.log(str.slice(-9, -5));
+console.log(str3.slice(-9, -5));
 // Expected output: "lazy"

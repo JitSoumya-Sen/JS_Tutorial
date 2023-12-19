@@ -29,11 +29,11 @@ console.log(eval(s2)); // returns the string "2 + 2"
 
 console.log(eval(s2.valueOf())); // returns the number 4
 //A String object can always be converted to its primitive counterpart with the valueOf() method.
-*/
+
 const str1 = new String(true)
 console.log(str1);
 const str2 = new String(Symbol("123")) // Throws typeerror
-
+*/
 const str3 = 'The quick brown fox jumps over the lazy dog.';
 
 console.log(str3.slice(4, 19));
@@ -41,3 +41,8 @@ console.log(str3.slice(4, 19));
 
 console.log(str3.slice(-9, -5));
 // Expected output: "lazy"
+
+console.log(str3.substring(2,5)); // e q
+console.log(str3.replace("quick","Not quick"));
+console.log(str3.includes('fox')); // true
+console.log(str3.split(" ",3)); // Split into 3 pieces

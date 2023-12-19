@@ -46,3 +46,15 @@ console.log(str3.substring(2,5)); // e q
 console.log(str3.replace("quick","Not quick"));
 console.log(str3.includes('fox')); // true
 console.log(str3.split(" ",3)); // Split into 3 pieces
+
+const stringObj = new String('foo');
+
+console.log(stringObj);
+// Expected output: String { "foo" }
+
+console.log(stringObj.valueOf());
+// Expected output: "foo"
+// A string representing the primitive value of a given String object.
+
+console.log(stringObj.toString());
+// Expected output: "foo"

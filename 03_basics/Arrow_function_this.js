@@ -28,10 +28,6 @@ const person = {
   
   person.greet();
 
-//   The arrow function greet is defined as a method of the person object.
-
-//   However, this inside greet does not refer to the person object itself. It inherits this from the enclosing context (which could be the global object or another function).
-
 //   As a result, this.name is undefined in this case.
 
 //              ************  ************

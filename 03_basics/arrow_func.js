@@ -4,7 +4,7 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        console.log(this); // context in user---
     }
 
 }
@@ -13,33 +13,34 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this);
+// console.log(this); // this is empty in node environment {} but not in browser
 
-// function chai(){
+// function chai1(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); // N/A for function, Only applicable on object 
+//     console.log(this) // All info regarding function
 // }
 
-// chai()
+// chai1()
 
-// const chai = function () {
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+const chai2 = function () {
+    let username = "hitesh"
+    console.log(this);
+}
 
-const chai =  () => {
+const chai3 =  () => {
     let username = "hitesh"
     console.log(this);
 }
 
 
-// chai()
+chai2()
+chai3() // returns {}
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 

@@ -1,7 +1,7 @@
 // Outside any function, `this` refers to the global object
 const globalMessage = "Hello from the global scope";
 
-const arrowFunc = () => console.log(this.globalMessage); //undefined
+const arrowFunc = () => console.log(this.globalMessage); //Logs undefined
 // const arrowFunc = () => console.log(this); // Logs {}
 
 arrowFunc();  

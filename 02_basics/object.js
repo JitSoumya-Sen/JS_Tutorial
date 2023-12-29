@@ -94,7 +94,7 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-
+// -- Object Destructuring
 const course = {
     coursename: "js in hindi",
     price: "999",
@@ -119,3 +119,24 @@ console.log(instructor);
     {},
     {}
 ]
+ // --  objects.groupby function
+function myCallback({ quantity }) {
+    return quantity > 5 ? "ok" : "restock";
+  }
+  
+  const result2 = Object.groupBy(inventory, myCallback);
+  
+  /* Result is:
+  {
+    restock: [
+      { name: "asparagus", type: "vegetables", quantity: 5 },
+      { name: "bananas", type: "fruit", quantity: 0 },
+      { name: "cherries", type: "fruit", quantity: 5 }
+    ],
+    ok: [
+      { name: "goat", type: "meat", quantity: 23 },
+      { name: "fish", type: "meat", quantity: 22 }
+    ]
+  }
+  */
+  
